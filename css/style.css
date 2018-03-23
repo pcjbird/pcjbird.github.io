@@ -183,6 +183,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc h2,
 .fh5co-cover .display-tc h2 {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
