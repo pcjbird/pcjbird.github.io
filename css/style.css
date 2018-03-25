@@ -799,6 +799,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-started .fh5co-heading p {
   color: rgba(255, 255, 255, 0.8);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif;
 }
 #fh5co-started .btn {
   height: 54px;
@@ -900,9 +901,13 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 5px;
 }
 .fh5co-blog .blog-text h3 {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif;
   font-size: 24px;
   margin-bottom: 20px;
   line-height: 1.5;
+}
+.fh5co-blog .blog-text p {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif;
 }
 .fh5co-blog .blog-text h3 a {
   color: black;
