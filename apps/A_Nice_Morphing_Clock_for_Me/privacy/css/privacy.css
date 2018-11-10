@@ -118,11 +118,11 @@ body {
 .ko span.name::before,
 .zh-CN span.name::before,
 .zh-TW span.name::before {
-	content: "足立裕司";
+	content: "";
 }
 
 .ja #privacy_content p:first-child span.name:first-child::after {
-	content: "は";
+	content: "";
 }
 
 #google_translate_element {
