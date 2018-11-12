@@ -6,28 +6,6 @@
 	    <link rel="stylesheet" href="./css/privacy.css">
 		<script src="./js/modernizr.min.js"></script>
 		<script src="./js/jquery-3.3.1.min.js"></script>
-		<script>
-
-document.addEventListener('DOMContentLoaded', function() {
-	
-	if(window != window.parent) {
-		$('body').css({overflow:'hidden'});
-	};
-	
-	var lang = 'zh-CN';
-	$('body').addClass(lang);
-	$(document).on('change','div[id$="targetLanguage"] select',function(){
-		var newlang = $(this).val();
-		$('body').removeClass(lang).addClass(newlang);
-		lang = newlang;
-		history.replaceState(null, null, './privacy.php?lang='+lang);
-		
-	});
-
-
-});
-
-		</script>
 	</head>
 	<body>
 		<section id="wrap">
