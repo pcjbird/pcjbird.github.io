@@ -4,4 +4,4 @@
 
 ## iClock Mini
 
-*隐私权政策([中文](https://pcjbird.github.io/apps/iClockMini/privacy/privacy_cn.html)|[英文](https://pcjbird.github.io/apps/iClockMini/privacy/privacy_en.html))
+* 隐私权政策([中文](https://pcjbird.github.io/apps/iClockMini/privacy/privacy_cn.html)|[英文](https://pcjbird.github.io/apps/iClockMini/privacy/privacy_en.html))
