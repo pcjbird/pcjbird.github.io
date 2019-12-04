@@ -102,12 +102,11 @@ img {
 	width: 100%;
 }
 .image {
-	width: 50%;
-	height: 50%;
+	width: 40%;
 	position: fixed;
 	z-index: -1;
-	top: 10%;
-	right: -10%;
+	top: 0%;
+	right: 8%;
 }
 .image_desktop {
  	visibility: visible;
@@ -244,6 +243,26 @@ ul.social {
   }	
 }
 
+@media screen and (max-width: 1366px) {
+	.buttons{
+		width: 150%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.buttons{
+		width: 120%;
+	}
+	.appstore {
+		width: 150px;	
+		margin-right: 10px;
+	}
+	.preview {
+		width: 150px;
+		margin-right: 10px;	
+	}
+}
+
 @media screen and (max-width: 667px) {
 	.container {
 		width: 100%;
@@ -254,8 +273,8 @@ ul.social {
 		margin: 0 auto;
 	}
 	.logo {
-		width: 8vh;
-		height: 8vh; 
+		width: 15vh;
+		height: 15vh; 
 		margin: 0 auto;
 	}
 	h1 {
@@ -352,5 +371,19 @@ ul.social {
 	    transform: translateY(0%);
 	    opacity: 1;
 	  }	
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	.appstore {
+		height: 46px;
+		width: 150px;
+		margin-left: 5%;
+	}
+	.preview {
+		height: 46px;
+		width: 150px;
+		margin-left: 5%;
 	}
 }

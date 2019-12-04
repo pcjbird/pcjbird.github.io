@@ -32,7 +32,7 @@
 		<link href="./css/videoplayer.css" rel="stylesheet" type="text/css">
 	</head>
 	<!-- Body -->
-	<body oncontextmenu='return false'>
+	<body oncontextmenu='return false' onselectstart='return false' oncopy='return false'>
 		<!-- Container -->
 		<div class="container">
 			<div class="logo"></div>
@@ -53,9 +53,9 @@
 				<li><a href="https://www.facebook.com/iClockApp" target="_blank">Facebook</a></li>
 				<li><a href="https://pcjbird.github.io">Developer</a></li>
 			</ul>
-			<div class="image">
+		</div>
+		<div class="image">
 				<img class="image_desktop" draggable="false" src="./img/App.jpg" alt="Contact Us">
-			</div>
 		</div>
 		<div id="video_overlay" class="video_overlay"  onclick="closeVideo()">
 		</div>
@@ -64,6 +64,11 @@
 		<div id="video_loader" class= "video_loader">
 			<div></div>
 		</div>
+		<script>
+			 window.document.oncontextmenu = function(){
+			     return false;
+			 }  
+		 </script>
 		<script src="./js/videoplayer.js"></script>
 	</body>
 </html>
