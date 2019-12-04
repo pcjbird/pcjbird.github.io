@@ -290,6 +290,9 @@ ul.social {
 		width: 80%;
 		margin: 0 auto;
 	}
+	.buttons{
+		width: 100%;
+	}
 	.appstore {
 		height: 46px;
 		width: 150px;
