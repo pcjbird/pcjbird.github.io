@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Title -->
+		<title>A Nice Morphing Clock for Me</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!-- Description -->
+		<meta name="author" content="qipeng dai">
+		<meta name="description" content="A cute minimalism flip clock & task alarm. The design is minimal, clean, mordern and smooth. You can customize the color scheme and switch with gestures easily. Nowadays, peoples would not like to have computers at home, using the iPad or iPhone as digital clock should be environmentally friendly and perfect. Put it on the bedside or desktop, looks good.">
+		<meta name="keywords" content="flip clock, alarm, digital clock, minimal, clean, mordern, smooth, task, nice, iPhone, iPad, Seconds clock, widget, color scheme, gestures, morphing, customisable, personalized, ins, lofter, life">
+		<meta name="Resource-type" content="Document">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Open Graph data -->		
+		<meta property="og:site_name" content="A Nice Morphing Clock for Me">
+		<meta property="og:title" content="A Nice Morphing Clock for Me">
+		<meta property="og:description" content="A cute minimalism flip clock & task alarm. The design is minimal, clean, mordern and smooth. You can customize the color scheme and switch with gestures easily. Nowadays, peoples would not like to have computers at home, using the iPad or iPhone as digital clock should be environmentally friendly and perfect. Put it on the bedside or desktop, looks good.">
+		<meta property="og:image" content="https://pcjbird.github.io/apps/A_Nice_Morphing_Clock_for_Me/website/images/thumb.png">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://apps.apple.com/us/app/a-nice-morphing-clock-for-me/id1128196970">
+		<!-- Twitter -->	
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="A Nice Morphing Clock for Me">
+		<meta name="twitter:description" content="A cute minimalism flip clock & task alarm. The design is minimal, clean, mordern and smooth. You can customize the color scheme and switch with gestures easily. Nowadays, peoples would not like to have computers at home, using the iPad or iPhone as digital clock should be environmentally friendly and perfect. Put it on the bedside or desktop, looks good.">
+		<meta name="twitter:url" content="https://apps.apple.com/us/app/a-nice-morphing-clock-for-me/id1128196970">
+		<meta name="twitter:image" content="https://pcjbird.github.io/apps/A_Nice_Morphing_Clock_for_Me/website/images/thumb.png">
+
+		<!-- CSS -->
+		<link href="./css/style.css" rel="stylesheet" type="text/css">
+		<link href="./css/videoplayer.css" rel="stylesheet" type="text/css">
+	</head>
+	<!-- Body -->
+	<body oncontextmenu='return false'>
+		<!-- Container -->
+		<div class="container">
+			<div class="logo"></div>
+			<h1>A Nice Morphing Clock for Me</h1>
+			<h2>MINIMAL / CLEAN / MORDERN / SMOOTH</h2>
+			<img class="image_mobile" draggable="false" src="./img/App_mobile.jpg" alt="Contact Us">
+			<div class="buttons">
+				<a href="https://apps.apple.com/us/app/a-nice-morphing-clock-for-me/id1128196970" target="_blank">
+					<div class="appstore"></div>
+				</a>
+				<a id="play-video" onclick="showVideo()">
+					<div class="preview"></div>
+				</a>
+			</div>
+			<ul class="social">
+				<li><a href="https://t.me/iClockApp" target="_blank">Telegram</a></li>
+				<li><a href="https://twitter.com/pcjbird" target="_blank">Twitter</a></li>
+				<li><a href="https://www.facebook.com/iClockApp" target="_blank">Facebook</a></li>
+				<li><a href="https://pcjbird.github.io">Developer</a></li>
+			</ul>
+			<div class="image">
+				<img class="image_desktop" draggable="false" src="./img/App.jpg" alt="Contact Us">
+			</div>
+		</div>
+		<div id="video_overlay" class="video_overlay"  onclick="closeVideo()">
+		</div>
+		<div id="video_holder" class= "video_holder">
+		</div>
+		<div id="video_loader" class= "video_loader">
+			<div></div>
+		</div>
+		<script src="./js/videoplayer.js"></script>
+	</body>
+</html>

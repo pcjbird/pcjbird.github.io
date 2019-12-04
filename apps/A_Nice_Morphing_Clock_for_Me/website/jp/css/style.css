@@ -1,0 +1,356 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding:0;
+    margin:0;
+    width: 100%;
+	overflow: visible;
+	font-family: -apple-system, BlinkMacSystemFont, 
+	    "Segoe UI", "Roboto", "Oxygen", 
+	    "Ubuntu", "Cantarell", "Fira Sans", 
+	    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+a, a:after, a:visited {
+	text-decoration: none;
+	color: #0C0C0C;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    position: absolute;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #0C0C0C;
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #0C0C0C;
+}
+::selection {
+	background: #0C0C0C;
+	color: #ffffff;
+}
+::-moz-selection {
+	background: #000000;
+	color: #ffffff;
+}
+.container {
+	width: 28%;
+	position:fixed; 
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0;
+	margin:4%;
+}
+.logo {
+	background-image: url(../img/appicon.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 10vh;
+	height: 10vh;
+	-webkit-animation:reveal 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:reveal 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:reveal 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+h1 {
+	font-size: 4.0vh;
+	color: #0C0C0C;
+	letter-spacing: 1px;
+	font-weight: 700;
+	margin-top: 40%;
+}
+h2 {
+	font-size: 1.6vh;
+	color: #0C0C0C;
+	opacity: 0.7;
+	letter-spacing: 0.5px;
+	line-height: 130%;
+	font-weight: 300;
+	margin-top: 8%;
+}
+img {
+	width: 100%;
+}
+.image {
+	width: 50%;
+	height: 50%;
+	position: fixed;
+	z-index: -1;
+	top: 10%;
+	right: -10%;
+}
+.image_desktop {
+ 	visibility: visible;
+}
+.image_mobile {
+ 	visibility: hidden;
+ 	display: none;
+}
+.buttons {
+	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+	-webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  	flex-wrap:wrap;
+  	width: 100%;
+  	height: 6vh;
+  	margin-top: 16%;
+}
+.appstore {
+	background-image: url(../img/Appstore.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 200px;
+	height: 6vh;	
+	margin-right: 30px;
+}
+.preview {
+	background-image: url(../img/Preview.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 200px;
+	height: 6vh;
+	margin-right: 30px;	
+}
+
+a:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+          cursor: pointer;
+}
+
+ul.social {
+	width: 100%;
+	bottom: 0; 
+	display: flex;  
+	list-style: none;
+	margin-top: 20%;
+}
+ul.social li {
+	margin-right: 5%;
+	transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+}
+ul.social li a {
+	font-size: 1.5vh;
+	color: #0C0C0C;
+	font-weight: 600;
+	cursor: pointer;
+}
+ul.social li a:hover {
+	color: #A5A5A5;
+}
+
+h1, h2, .appstore, .preview, ul.social{
+	-webkit-animation:animate 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+	
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+	
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+h2 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.appstore {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.preview {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+ul.social {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;	
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    -webkit-transform: scale(0);
+   }
+  100% {
+    -webkit-transform: scale(1);
+  }	
+}
+@keyframes reveal {
+  0% {
+    transform: scale(0);
+   }
+  100% {
+    transform: scale(1);
+  }	
+}
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(50%);
+	opacity: 0;
+   }
+  100% {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }	
+}
+@keyframes animate {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+   }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }	
+}
+
+@media screen and (max-width: 667px) {
+	.container {
+		width: 100%;
+		position:relative; 
+		margin:0%;
+		padding-top: 15%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.logo {
+		width: 8vh;
+		height: 8vh; 
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 3.0vh;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 10%;
+	}
+	h2 {
+		font-size: 1.6vh;
+		padding-top: 10%;
+		padding-bottom: 20%;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.appstore {
+		height: 61px;
+		width: 200px;
+		margin-left: 10%;
+	}
+	.preview {
+		height: 61px;
+		width: 200px;
+		margin-left: 10%;
+	}
+	.image_desktop {
+	 	visibility: hidden;
+	}
+	.image_mobile {
+	 	visibility: visible;
+	 	overflow: hidden;
+	 	margin-bottom: 10%;
+	 	display: block;
+	}
+	ul.social {
+		width: 90%;
+		position: relative;
+		padding-top: 15%;
+		padding-bottom: 25%;
+		margin: 0 auto;
+		display: inherit;
+	}
+	ul.social li {
+		margin-right: 0;
+		margin-top: 16px;
+	}
+	ul.social li a {
+		font-size: 2vh;
+	}
+	h1, h2, .appstore, .preview, .social, .image_mobile {
+		-webkit-animation:animate 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
+		-moz-animation:animate 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
+		animation:animate 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
+		
+		-webkit-animation-fill-mode:backwards;
+		-moz-animation-fill-mode:backwards;
+		animation-fill-mode:backwards;
+		
+		-webkit-animation-delay: 0.2s;
+		animation-delay: 0.2s;
+	}
+	h2 {
+		-webkit-animation-delay: 0.4s;
+		animation-delay: 0.4s;
+	}
+	.image_mobile {
+		-webkit-animation-delay: 0.6s;
+		animation-delay: 0.6s;		
+	}
+	.appstore, .preview {
+		-webkit-animation-delay: 0.8s;
+		animation-delay: 0.8s;	
+	}
+	ul.social {
+		-webkit-animation-delay: 1.0s;
+		animation-delay: 1.0s;	
+	}
+	@-webkit-keyframes animate {
+	  0% {
+	    -webkit-transform: translateY(60px);
+		opacity: 0;
+	   }
+	  100% {
+	    -webkit-transform: translateY(0%);
+	    opacity: 1;
+	  }	
+	}
+	@keyframes animate {
+	  0% {
+	    transform: translateY(60px);
+	    opacity: 0;
+	   }
+	  100% {
+	    transform: translateY(0%);
+	    opacity: 1;
+	  }	
+	}
+}
