@@ -27,6 +27,19 @@
     outline: 0;
 }
 
+.video_close{
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:4.8vh;
+    height:7.5vh;
+    position:absolute;
+    left: 50%;
+    margin-left:-2.4vh;
+    bottom: -7.5vh;
+    cursor: pointer;
+}
+
 .video_loader{
 	-webkit-box-shadow: black 0px 0px 85px, black 0px 0px 85px;
     box-shadow: black 0px 0px 85px, black 0px 0px 85px;
